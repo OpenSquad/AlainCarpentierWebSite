@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" /> 
+	<title>A propos</title>
+	<link rel="icon" href="ressources/img/a.png">
+	<link rel="stylesheet" type="text/css" href="projet.css">
+</head>
+<body>
+
+<header>
+	<!-- nom du site/logo-->
+	<a id="logo-link" href="Acceuil.html" title="Acceuil">Alain CARPENTIER</a>
+	<nav> <!-- Barre de navigation :naviguer entre les pages-->
+		<ul>
+			<li><a href="accueil.html" >Accueil</a></li>
+			<li><a href="oeuvres.html" >Œuvres</a></li>
+			<li><a href="galerie.html">Galerie</a></li>
+			<li><a href="recompenses.html" >Récompenses</a></li>
+			<li><a href="#" class="page-actuelle" >À propos</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section class="à-propos-content">
+
+<section id="à-propos">
+	<h1>A propos</h1>
+
+	<div id="devs-container">
+		<div class="dev">
+		<img src="ressources/img/photo-rayan.png" " alt="Photo de Rayan" title="Rayan Samy Ramoul">
+		<br/><span>Rayan Samy Ramoul</span>			
+		</div>
+
+        <div><p>Etudiants en 3éme année Ingénierie des Systèmes d'Information et Logiciels.<br>
+        Ce site a été conçu et developpé en tant que Projet pour le module de 'Programmation Web'.</p>
+		    <p>Vous pouvez télécharger ce projet sur GitHub <a href="https://github.com/OpenSquad/AlainCarpentierWebSite" > cliquez ici
+		    </a></p>
+ 		</div>
+		<div class="dev">
+		<img src="ressources/img/photo-amine.png" " alt="Photo de Amine" title="Amine Djeghri">
+		<br/><span>Amine Djeghri</span>	
+		</div>
+
+	</div>		
+</section>
+
+<form method="post" action="#">
+<fieldset>
+       <legend>Contactez-nous !</legend> 
+       
+    <label for="email">Email</label>  <input id="email" name="email" placeholder="name@email.com" required/><br/>
+
+    <label for="sexe">Sexe :</label><br />
+       <input type="radio" name="sexe" value="homme" id="homme" checked /> <label for="homme">Homme</label><br />
+       <input type="radio" name="sexe" value="femme" id="femme" /> <label for="femme">Femme</label><br />
+    
+    <label for="dateNaissance">Date de naissance</label> <input id="dateNaissance" name="dateNaissance" type="date" required/><br/>
+
+        <label for="pays">Dans quel pays habitez-vous ?</label><br/>
+       <select name="pays" id="pays">
+       	<option value="algerie">Algérie</option>
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+       <br/>
+
+       <label for="message" >Votre message :</label><br/>
+       <textarea name="message" id="message"  required rows="10" cols="50"></textarea>
+       <br/>
+ <input type="submit" value="Envoyer" id="envoi" />  
+</fieldset>
+</form>
+
+
+	   
+</section>
+
+
+
+</body>
+</html>

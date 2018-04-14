@@ -1,0 +1,366 @@
+﻿/*global */
+body{
+	margin: 0; padding: 0;	font-family: arial;
+
+   }
+a{
+	 text-decoration: none;	}
+ul ,h1 ,h2,p{
+	padding: 0;margin: 0;}
+
+
+
+
+/*Header*/
+header{
+	justify-content: space-between;
+	height: 80px;
+    box-shadow: 0px 5px  8px #888888;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    font-size: 18px;
+    min-width: 800px;
+}
+
+#logo-link{
+	color: black;
+	font-family: Century Gothic;
+	display: inline-block;
+	line-height: 75px;
+   padding-left: 15px;padding-right: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    height: 100%;
+
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	list-style-type: none;
+	height:100%;
+	margin-right: 20px;
+}
+
+
+header nav li{
+	display: inline;
+}
+
+header nav a{
+	display: inline-block;
+	color: black;
+	font-family: Century Gothic;
+	height: 100%;
+    line-height: 70px;
+    padding: 0 5px ;
+	font-weight: bold;
+}
+header nav a:hover{
+ background-color: Gainsboro;
+}
+
+.page-actuelle{
+	/* pour afficher le border-bottom de la page actuelle*/
+	border-bottom:solid #A52A2A 3px;
+	border-radius: 1px;
+}
+
+
+/*Footer*/
+footer {
+   text-align: center;
+   background-color:rgb(22,40,76);
+   	color:white;
+   	border-top: white 2px solid;
+
+
+}
+footer address{
+    width: 500px;
+	margin:auto;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+footer a{
+	color:#9f77f4;
+}
+footer a:hover{
+	color:#FFC0CB;
+}
+
+footer img{
+	width: 70px;height: 70px;
+	margin:auto;
+	display: inline-block;
+	margin-bottom: 3px;
+	background-color: red;
+}
+
+
+
+.main-content{
+/*corps principal (entre le header et le footer)*/	
+	margin-top: 80px;
+    min-width: 800px;
+}
+
+/*page1:------Accueil------*/
+#image-principale {
+
+	background-size: cover;
+	height: 100%;
+	display: block;
+	filter: grayscale();
+	width: 90%;
+	height: auto;
+	max-height: 700px;
+	display: block;
+	margin:auto;
+	padding: 15px;
+}
+
+	
+
+.main-content h1{
+	color: #8470FF;
+	display:  inline-block;
+	margin: 5px; padding: 2px;
+	background-color: white;
+	border:white; border-radius: 5px;
+
+
+}
+.main-content section section{
+	text-align:center;
+ border-bottom:solid 2px white;
+}
+.main-content section section:nth-child(last){
+	text-align:center;
+}
+
+.main-content section p{
+  text-align: justify;
+  width: 70%;
+  margin: auto auto 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px;
+
+}
+
+
+#biographie{
+	background: linear-gradient(45deg, #ED4264, #FFEDBC);
+}
+
+#réalisations{
+	background: linear-gradient(45deg, #6A82FB, #FC5C7D);
+}
+
+/*section contenant des tableaux récapitulatifs de la page1*/
+#titres-fontions{
+	background: linear-gradient(45deg, #6A82FB, #FC5C7D);	
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+
+#titres-fontions table{
+	border-radius: 10px;
+	overflow: hidden;
+  border-collapse: collapse;
+  background: white;
+  width: 70%;
+  margin: auto;
+margin-top:20px;
+ text-align: left;
+
+}
+#titres-fontions table caption{
+	background-color: #36304a;
+	color: white;
+	font-weight: bold;
+	padding:5px;
+}
+#titres-fontions table th{
+	min-width: 200px;
+	color: white;
+	background-color: #36304a;
+	padding-left: 3px;
+}
+#titres-fontions table td{
+padding-left: 5px;
+}
+
+#titres-fontions table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+
+
+/*page 2 et 4 :Oeuvres et récompenses; */
+
+.main-content-3{
+/*corps principale des pages 2 et 4*/
+	margin-top: 80px;
+	min-width: 800px;
+background-color: #36304a;
+ overflow: auto;
+}
+
+.text-bloc
+{     
+	font-size: 20px;
+	font-family: "Open Sans";
+	background-color: white;
+	border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    width: 50%;
+    margin: 15px auto 20px auto;
+    padding: 60px;
+  
+}
+
+.text-bloc h1
+{
+	text-align: center;
+	color: #1c3f77;
+	font-size: 32px;
+	border: 1px solid;
+	border-color:#1c3f77;
+	margin-bottom: 18px;
+}
+#nav-sidebar
+{
+	background-color: white;
+	font-family: "Open Sans";
+	opacity: 0.5;
+	background-color: white;
+    border: 1px solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: fixed;
+	float: left;
+	top: 300px;
+	margin-left: 2px;
+	padding: 14px;
+	height: auto;
+	width: 15%;
+	min-width: 105px;
+}
+#nav-sidebar ul{
+	list-style: none;
+}
+
+#nav-sidebar a
+{
+	text-decoration: none;
+	color: #306dd1;
+	font-size: 20px;
+}
+#nav-sidebar a:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #306dd1;
+	font-size: 20px;
+}
+
+
+/*page3:-----galerie*/
+#galerie{
+	text-align: center;
+	width: 80%;
+	background-color:#252B30;
+	color:white;
+	margin: auto;
+	min-height: 800px;
+}
+
+.image{
+display: inline-block;
+	
+}
+.image img{
+	width:275px; height:  183px;
+}
+
+
+
+/*page5:------à propos*/
+
+.à-propos-content{
+/* corps principal (utilisé dans la page 3 et 5)*/	
+ font-family: Calibri;
+ background-color: #F0F8FF;
+ 	margin-top: 80px;
+    min-width: 800px;
+
+}
+#à-propos {
+	text-align: center;
+	width: 80%;
+	background-color:#252B30;
+	color:white;
+	margin: auto;
+}
+#à-propos a {
+color: grey;
+}
+
+#à-propos a:hover {
+color: #D3D3D3;
+}
+
+#à-propos h1{
+background-color:#252B30;
+margin-top: 80px;
+   color:white;
+	font-size: 50px;
+	display: inline-block;
+}
+#à-propos p{
+background-color:#252B30;
+	color:white;
+	margin: auto 30px;
+}
+#devs-container{
+display: flex;
+align-items: center;
+justify-content: center;
+	height: 400px;
+}
+#devs-container img{
+	height: 200px; width: 200px; border-radius: 100%;
+}
+/*formulaire de la page(5) à propos*/
+form{
+	background-color:#252B30;
+	color:white;
+	font-family: "Open Sans";
+	margin: auto;
+	width: 80%;
+	padding-left: 
+}
+
+form legend{
+font-size: 30px;
+text-align: center;
+}
+
+form input{
+border-radius: 8px;
+padding-left: 2px;
+
+font-size:16px;
+
+}
+textarea{
+border-radius: 8px;
+padding-left: 2px;	
+font-size: 16px;
+}
